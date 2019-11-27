@@ -1,0 +1,1 @@
+<a href="{{ route('pdf.download', $order) }}" target="_blank" class="btn btn-outline-danger mr-3"><i class="fa fa-file-pdf-o"></i> PDF</a>
