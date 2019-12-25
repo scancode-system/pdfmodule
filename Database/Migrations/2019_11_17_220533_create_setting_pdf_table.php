@@ -18,6 +18,13 @@ class CreateSettingPdfTable extends Migration
 
             $table->string('title');
             $table->integer('margin_top')->default(10);
+            $table->text('statement_responsibility')->nullable();
+            $table->text('global_observation')->nullable();
+
+            $table->boolean('show_item_image')->default(1);
+            $table->boolean('show_item_discount')->default(1);
+            $table->boolean('show_item_addition')->default(1);
+            $table->boolean('show_item_taxes')->default(1);
 
             $table->timestamps();
         });

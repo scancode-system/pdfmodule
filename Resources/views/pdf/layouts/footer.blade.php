@@ -14,6 +14,11 @@
 			Acréscimo<br>
 			@currency($order->addition_value)
 		</td>
+		<td class="text-center fs-30">+</td>
+		<td class="border border-dark height-75 width-130 text-center">
+			Impostos<br>
+			@currency($order->tax_value)
+		</td>
 		<td class="text-center fs-30">=</td>
 		<td class="border border-dark height-75 width-130 text-center">
 			Total<br>
@@ -57,8 +62,8 @@
 <p class="text-center fs-20 mb-0">São Paulo, {{ $order->closing_date ?? 'N/A' }}</p>
 <p class="text-center fs-15">De acordo:</p>
 <table class="w-50 m-auto">
-		<tr>
-			<td class="border-bottom border-dark height-75">
-			</td>
-		</tr>
-	</table>
+	<tr>
+		<td class="border-bottom border-dark height-75">
+		</td>
+	</tr>
+</table>

@@ -15,7 +15,7 @@ class SettingPdfRequest extends FormRequest
     {
         return [
             'title' => 'string|max:255',
-            'margin_top' => 'integer|min:0',
+            'margin_top' => 'integer|min:0'
         ];
     }
 

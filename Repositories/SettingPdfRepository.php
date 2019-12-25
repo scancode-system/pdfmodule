@@ -9,7 +9,7 @@ class SettingPdfRepository
 {
 	// CREATES
 	public static function init(){
-		return SettingPdf::create(['title' => '']);
+		return SettingPdf::create(['title' => '', 'global_observation' => '', 'statement_responsibility' => '']);
 	}
 
 	// LOADS
