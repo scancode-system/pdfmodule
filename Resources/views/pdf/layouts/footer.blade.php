@@ -42,7 +42,7 @@
 </table>
 <table class="w-100 mb-3">
 	<tr>
-		<td class="border border-dark p-2">
+		<td class="border border-dark p-2"> 
 			<strong>OBSERVAÇÔES:</strong><br>
 			<p class="p-0 mb-0">{!! nl2br($setting_order->global_observation) !!}</p>
 			@if(!is_null($order->observation))
