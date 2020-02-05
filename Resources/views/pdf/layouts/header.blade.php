@@ -100,5 +100,18 @@
 		</td>
 	</tr>
 </table>
-
+<table class="w-100 mb-3">
+	<tr>
+		<td class="border border-dark">
+			<p class="border-bottom border-dark p-1 mb-0" >Detalhes do Pedido</p>
+			<table class="w-100 m-2">
+				<tr>
+					<td><strong>Pagamento: </strong>{{ $order->order_payment->description }}</td>
+					<td><strong>Transportadora: </strong>{{ $order->order_shipping_company->description }}</td>
+					<td><strong>Entrega: </strong>{{ $order->delivery_name }}</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
 
