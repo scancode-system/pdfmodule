@@ -24,7 +24,7 @@
 		</td>
 		<td class="width-10"></td>
 		<td class="border border-dark w-65 p-0 align-top pb-2">
-			<p class="border-bottom border-dark p-1 mb-2 ">DADOS DO CLIENTE</p>
+			<p class="border-bottom border-dark p-1 mb-2 ">DADOS DO CLIENTE: {{ $order->order_client->client_id }}</p>
 			<div class="px-2">
 				<table class="w-100">
 					<tr>
