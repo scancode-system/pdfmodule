@@ -29,8 +29,9 @@ class PDFService {
 
 
 	public function makePdf(){
+		//dd(PdfLayoutRepository::loadView());
 		$this->pdf = PDF::loadView(PdfLayoutRepository::loadView(), 
-			['order' => $this->order, 'company' => CompanyRepository::company(), 'setting_pdf' => $this->setting_pdf, 'count_show_columns' => SettingPdfColumnRepository::countShowColumns(), 'setting_order' => $this->setting_order]+$this->setting_columns());
+			['order' => $this->order, 'company' => CompanyRepository::company(), 'setting_pdf' => $this->setting_pdf, 'count_show_columns' => SettingPdfColumnRepository::countShowColumns(), 'setting_order' => $this->setting_order]+$this->setting_columns())->setOption('footer-center', 'Page [page]')->setOption('footer-font-size', 8);
 
 		$this->pdf_file = $this->pdf->inline('pedido_'.$this->order->id.'.pdf');
 		Storage::disk('public')->put('pedidos/pedido_'.$this->order->id.'.pdf', $this->pdf_file, 'public');
